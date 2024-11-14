@@ -1,0 +1,19 @@
+@charset "UTF-8";
+/* 
+     Verde esbranquiçado:  #F0FFED; 
+	 Branco: #FFFFFF;
+	 Azul para botão: #4F72FF; 
+	 Lilás claro(adicional): #FEB6FF;
+	 Verde Pesquisa: #009628;
+	 Cinza texto: #515151;
+*/
+*, html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #F0FFED;
+}/*# sourceMappingURL=body.css.map */

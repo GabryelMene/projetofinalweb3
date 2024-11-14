@@ -1,0 +1,53 @@
+@charset "UTF-8"; 
+
+/* 
+     Verde esbranquiçado:  #F0FFED; 
+	 Branco: #FFFFFF;
+	 Azul para botão: #4F72FF; 
+	 Lilás claro(adicional): #FEB6FF;
+	 Verde Pesquisa: #009628;
+	 Cinza texto: #515151;
+*/
+
+$green-background-color: #F0FFED; 
+$white: #FFFFFF; 
+$blue-button: #4F72FF;  
+$informative-purple: #FEB6FF; 
+$search-green: #009628;
+$gray: #515151; 
+
+
+@mixin flex-row-header {
+    display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	gap: 20px;
+}
+
+@mixin flex-mid {
+	display: flex; 
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+@mixin options-green {
+    background-color: $search-green;
+    padding: 25px;
+    height: 40px;
+    width: 70px;
+    border: 1px solid $gray;
+    border-radius: 5px 0px 0px 5px;
+    border-right: 0px;
+}
+
+@mixin options-white {
+	color: $gray;
+    background-color: $white;
+    padding: 25px;
+    height: 40px;
+    width: 70px;
+    border: 1px solid $gray;
+    border-radius: 0px 5px 5px 0px;
+    border-left: 0px;
+}

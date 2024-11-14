@@ -1,0 +1,166 @@
+@charset "UTF-8";
+@import '../root/root';
+
+header { 
+    @include flex-row-header;
+    width: 100vw;
+    height: 70px;
+    background-color: $white;
+    border-bottom: 1px solid $gray;
+}
+
+.div-logo {
+    @include flex-mid;
+    font-size: 20px;
+    padding: 15px 10px;
+    border-right: 1px solid $gray;
+
+    @media (min-width: 1065px) and (max-width: 1175px){
+        padding: 25px;
+        font-size: 25px;
+    }
+
+    @media (min-width: 1185px) {
+        padding: 25px;
+        font-size: 25px;
+    }
+}
+
+.div-search {
+    padding-top: 8px;
+
+    form {
+        @include flex-row-header;
+        gap: 0px;
+    }
+    
+    select {
+        display: none;
+
+        @media (min-width: 500px) {
+            display: block;
+            color: white;
+            font-size: 15px;
+            padding: 8px;
+            border-radius: 5px 0px 0px 5px;
+            background-color: $search-green;
+            border: 1px solid $gray;
+            border-right: 0px;
+        }
+    }
+
+    input[type=text] { 
+        border: 1px solid $gray;
+        border-radius: 20px 0px 0px 20px;
+        padding: 10px;
+
+        @keyframes animation_width {
+            from {
+                
+            }
+        }
+
+        &:focus {
+            outline: none;
+        }
+
+        @media (min-width: 500px) {
+            width: 30vw;
+            border-left: none;
+            border-radius: 0px;
+        }
+
+        @media (min-width: 672px) and (max-width: 712px) {
+            width: 50vw;
+        }
+
+        @media (min-width: 780px) {
+            width: 35vw;
+        }
+
+        @media (min-width: 890px) {
+            width: 40vw;
+        }
+    }
+
+    button {
+        text-align: center;
+        padding: 7px;
+        color: white;
+        background-color: $search-green;
+        border-radius: 0px 25px 25px 0px;
+        border: 1px solid $gray;
+        border-left: none;
+    }
+
+    span {
+        font-size: 35px;
+    }
+}
+
+.div-wallet-option {
+    padding: 10px;
+    display: flex;
+    color: white;
+    display: none;
+    
+    @media (min-width: 1185px) {
+        display: flex;
+    }
+
+
+    .wallet {
+        @include flex-mid;
+        @include options-green;
+    }
+
+    .wallet-number {
+        @include flex-mid;
+        @include options-white;
+    }
+
+    span {
+        font-size: 35px;
+    }
+}
+
+.div-cart-option {
+    color: white; 
+    display: none;
+
+    @media (min-width: 712px) {
+       @include flex-mid
+    }
+    
+
+    .cart {
+        @include flex-mid;
+        @include options-green;
+    }
+
+    .cart-numbers {
+        @include flex-mid;
+        @include options-white;
+
+        .cart-number {
+            font-size: 30px;
+        }
+    }
+
+    span {
+        font-size: 35px;
+    }
+}
+
+.div-options {
+    @include flex-mid;
+    background-color: $search-green;
+    color: $white;
+    width: 50px;
+
+    span {
+        text-align: center;
+        font-size: 35px;
+    }
+}
+
