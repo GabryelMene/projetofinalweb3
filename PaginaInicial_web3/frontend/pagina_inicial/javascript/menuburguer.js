@@ -17,7 +17,6 @@ function MenuOpenAndClose_pc() {
 }
 
 addEventListener("resize", () => {
-    const heightOutput = window.innetHeight; 
     const widthOutput = window.innerWidth;
     const menu_mobile = document.getElementById("div-options-menu_m");
     const menu_pc = document.getElementById("div-options-menu_pc");
