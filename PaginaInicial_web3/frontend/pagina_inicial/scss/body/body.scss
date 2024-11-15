@@ -8,7 +8,24 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+a {
+    color: black;
+    text-decoration: none;
+}
+
+ul,ol,li {
+    list-style: none;
+}
+
+select,option,span,button {
+    cursor: pointer;
+}
+
+option {
+    border: none;
+}
+
+
 body {
     background-color: $green-background-color;
 }
-

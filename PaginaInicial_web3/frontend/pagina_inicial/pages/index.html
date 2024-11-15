@@ -1,33 +1,55 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta http-equiv="X-UA-Compatible" content="IE=7">
     <meta name="description" content="Melhor E-commerce que você já viu!">
-    <meta name="keywords" content="loja,comércio,ambiente,pontos,gratis,resgatar,ranking,shop,e-commerce,ecommerce,tecnologia,roupas">
-    <link rel="stylesheet" href="/frontend/pagina_inicial/scss/body/body.css">
-    <link rel="stylesheet" href="/frontend/pagina_inicial/scss/header/header.css">
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+    <meta name="keywords"
+        content="loja,comércio,ambiente,pontos,gratis,resgatar,ranking,shop,e-commerce,ecommerce,tecnologia,roupas">
+    <link rel="stylesheet" href="../scss/body/body.css">
+    <link rel="stylesheet" href="../scss/header/header.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <title>Leaf - Ganhe junto com o meio ambiente</title>
 </head>
 
 <body>
+    <script src="../javascript/menuburguer.js"></script>
     <header class="div-header">
-        <div class="div-logo"> 
+        <div class="div-options-menu_m" id="div-options-menu_m">
+            <span class="material-symbols-outlined span-close" onclick="MenuOpenAndClose_m()">close</span>
+            <div class="div-options-select">
+                <ul class="list-options">
+                    <li class="option">
+                        <span class="material-symbols-outlined span-option">home</span>
+                        <a href="/index.html">ínicio</a>
+                    </li>
+                    <li class="option">
+                        <span class="material-symbols-outlined span-option">person</span>
+                        <a href="/profile">Meu perfil</a>
+                    </li>
+                    <li class="option">
+                        <span class="material-symbols-outlined span-option">leaderboard</span>
+                        <a href="/leaderboard">Leaderboard</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="div-logo">
             <h1>Leaf</h1>
         </div>
         <div class="div-search">
             <form action="#" method="get">
                 <select name="select_items" id="select_items">
                     <option value="todos" selected>Todos</option>
-                    <option value="eletronicos" selected>Eletrônicos</option>
-                    <option value="fashion" selected>Fashion</option>
+                    <option value="eletronicos">Eletrônicos</option>
+                    <option value="fashion">Fashion</option>
                 </select>
-                <input type="text" placeholder="Pesquisar no Leaf"/>
+                <input type="text" placeholder="Pesquisar no Leaf" />
                 <button type="submit">
-                  <span class="material-symbols-outlined">search</span>
+                    <span class="material-symbols-outlined">search</span>
                 </button>
             </form>
         </div>
@@ -48,10 +70,27 @@
             </div>
         </div>
         <div class="div-options">
-            <span class="material-symbols-outlined">menu</span>
+            <span class="material-symbols-outlined span-menu" onclick="MenuOpenAndClose_m()">menu</span>
+            <span class="material-symbols-outlined span-settings" onclick="MenuOpenAndClose_pc()">settings</span>
+            <div class="div-options-menu_pc" id="div-options-menu_pc">
+                <ul class="list-options">
+                    <li class="option">
+                        <span class="material-symbols-outlined">home</span>
+                        <a href="/index.html">ínicio</a>
+                    </li>
+                    <li class="option">
+                        <span class="material-symbols-outlined">person</span>
+                        <a href="/profile">Meu perfil</a>
+                    </li>
+                    <li class="option">
+                        <span class="material-symbols-outlined">leaderboard</span>
+                        <a href="/leaderboard">Leaderboard</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </header>
-    <main>
+    <main class="div-main">
         <div class="Image-div"></div>
     </main>
 </body>

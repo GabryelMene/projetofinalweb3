@@ -9,6 +9,50 @@ header {
     border-bottom: 1px solid $gray;
 }
 
+.div-options-menu_m {
+    position: absolute;
+    display: none;
+    color: white;
+    background-color: $search-green;
+    height: 100%; 
+    width: 100%;
+
+    .span-close {
+        font-size: 70px;
+    }
+
+    .div-options-select {
+        padding: 15px;
+    }
+
+    .list-options {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .span-option {
+        font-size: 30px;
+
+        @media (min-width: 670px) {
+            font-size: 50px;
+        }
+    }
+
+    .option {
+        font-size: 30px;
+        cursor: pointer;
+
+        @media (min-width: 670px) {
+            font-size: 50px;
+        }
+    }
+
+    a {
+        color: white;
+    }
+}
+
 .div-logo {
     @include flex-mid;
     font-size: 20px;
@@ -70,16 +114,24 @@ header {
             border-radius: 0px;
         }
 
-        @media (min-width: 672px) and (max-width: 712px) {
-            width: 50vw;
-        }
-
-        @media (min-width: 780px) {
-            width: 35vw;
+        @media (min-width: 712px) {
+           width: 20vw;  
         }
 
         @media (min-width: 890px) {
             width: 40vw;
+        }
+
+        @media (min-width: 1185px) {
+            width: 30vw;
+        }
+
+        @media (min-width: 1560px) {
+            width: 40vw;
+        }
+
+        @media (min-width: 1910px) {
+            width: 50vw;
         }
     }
 
@@ -117,6 +169,10 @@ header {
     .wallet-number {
         @include flex-mid;
         @include options-white;
+
+        @media (min-width: 1600px) {
+            width: 100px;
+        }
     }
 
     span {
@@ -145,6 +201,10 @@ header {
         .cart-number {
             font-size: 30px;
         }
+
+        @media (min-width: 1600px) {
+            width: 100px;
+        }
     }
 
     span {
@@ -156,11 +216,59 @@ header {
     @include flex-mid;
     background-color: $search-green;
     color: $white;
-    width: 50px;
+    width: 65px;
 
-    span {
+    @media (min-width: 1600px) {
+        width: 100px;
+    }
+
+    .span-menu {
         text-align: center;
         font-size: 35px;
+
+        @media (min-width: 1600px) {
+            display: none;
+        }
+    }
+
+    .span-settings {
+        display: none;
+        font-size: 50px;
+
+        @media (min-width: 1600px) {
+            display: inline;
+        }
+    }
+}
+
+.div-options-menu_pc {
+    display: none;
+    position: absolute;
+    top: 75px;
+    right: 0.8px;
+    width: 190px;
+    border-radius: 3px;
+    background-color: $white;
+    color: black;
+    border: 1px solid $gray;
+    font-size: 24px;
+
+    @media (min-width: 1600px) {
+        display: none;
+    }
+
+    padding: 10px;
+
+    span {
+        color: $search-green;
+    }
+
+    .option {
+        cursor: pointer;
+    }
+
+    a {
+        color: black;
     }
 }
 
