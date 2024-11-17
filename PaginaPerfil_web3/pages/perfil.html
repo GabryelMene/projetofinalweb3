@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <link rel="stylesheet" href="../scss/body/body.css">
+    <link rel="stylesheet" href="../scss/main/main.css">
+    <link rel="stylesheet" href="../scss/header/header.css">
+    <link rel="stylesheet" href="../scss/footer/footer.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <title>Personalizar perfil</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="div-options-menu_m" id="div-options-menu_m">
+            <span class="material-symbols-outlined span-close" onclick="MenuOpenAndClose_m()">close</span>
+            <div class="div-options-select">
+                <ul class="list-options">
+                    <li class="option">
+                        <span class="material-symbols-outlined span-option">home</span>
+                        <a href="./index.html">início</a>
+                    </li>
+                    <li class="option option-profile">
+                        <span class="material-symbols-outlined span-option">person</span>
+                        <a href="/profile">Iniciar sessão</a>
+                    </li>
+                    <li class="option option-profile-logged">
+                        <span class="material-symbols-outlined span-option">person</span>
+                        <a href="/profile">Meu perfil </a>
+                    </li>
+                    <li class="option">
+                        <span class="material-symbols-outlined span-option">leaderboard</span>
+                        <a href="/leaderboard">Leaderboard</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="div-logo">
+            <h1>Leaf</h1>
+        </div>
+        <div class="div-search">
+            <form action="#" method="get">
+                <select name="select_items" id="select_items">
+                    <option value="todos" selected>Todos</option>
+                    <option value="eletronicos">Eletrônicos</option>
+                    <option value="fashion">Fashion</option>
+                </select>
+                <input type="search" placeholder="Pesquisar no Leaf" />
+                <button type="submit">
+                    <span class="material-symbols-outlined">search</span>
+                </button>
+            </form>
+        </div>
+        <div class="div-wallet-option">
+            <div class="wallet">
+                <span class="material-symbols-outlined">account_balance_wallet</span>
+            </div>
+            <div class="wallet-numbers">
+                <span class="wallet-number">0</span>
+            </div>
+        </div>
+        <div class="div-cart-option">
+            <div class="cart">
+                <span class="material-symbols-outlined">shopping_cart</span>
+            </div>
+            <div class="cart-numbers">
+                <span class="cart-number">0</span>
+            </div>
+        </div>
+        <nav class="div-options">
+            <span class="material-symbols-outlined span-menu" onclick="MenuOpenAndClose_m()">menu</span>
+            <span class="material-symbols-outlined span-settings" onclick="MenuOpenAndClose_pc()">settings</span>
+            <div class="div-options-menu_pc" id="div-options-menu_pc">
+                <ul class="list-options">
+                    <li class="option">
+                        <span class="material-symbols-outlined">home</span>
+                        <a href="./index.html">início</a>
+                    </li>
+                    <li class="option option-profile">
+                        <span class="material-symbols-outlined span-option">person</span>
+                        <a href="/profile">Log-in</a>
+                    </li>
+                    <li class="option option-profile-logged">
+                        <span class="material-symbols-outlined span-option">person</span>
+                        <a href="/profile">Meu perfil </a>
+                    </li>
+                    <li class="option">
+                        <span class="material-symbols-outlined">leaderboard</span>
+                        <a href="/leaderboard">Leaderboard</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="div-profile">
+            <div class="div-profile-pfp">
+                <img src="../images/Default_pfp.svg.png" alt="User's profile picture" class="user-profile-pfp">
+            </div>
+            <div class="div-form-profile">
+                <form action="/teste.jsp" method="post" class="form">
+                    <label for="input-profile-pfp" class="style-profile-pfp">Nova foto</label>
+                    <input type="file" name="profile-picture-user" id="input-profile-pfp">
+                    
+                    <label for="input-name" class="label-input">Nome</label>
+                    <input type="text" name="name" class="input-name input-profile" placeholder="Seu novo nome">
+                    
+                    <label for="input-email" class="label-input">Email</label>
+                    <input type="email" name="email" class="input-email input-profile" placeholder="Seu melhor email">
+                    
+                    <label for="input-email-save" class="label-input">Email de recuperação</label>
+                    <input type="email" name="email-save" class="input-email-save input-profile" placeholder="Seu novo email de recuperação">
+                    
+                    <label for="input-password" class="label-input">Senha</label>
+                    <input type="password" name="password" class="input-password input-profile"  minlength="6" placeholder="Sua nova senha"  pattern="^(?=.*[A-Z])(?=.*\d)(?=.*[^\w\s]).{6,}$" onkeyup="testPassowrdStrong()">
+                    <div class="div-password-list-necessary">
+                        <ul class="list-password-necessary">
+                            <li class="item item-digits">6 dígitos</li>
+                            <li class="item item-upperCase">Uma letra maiúscula</li>
+                            <li class="item item-number">Um número</li>
+                            <li class="item item-character">Um caractere especial</li>
+                        </ul>
+                    </div>   
+                
+                    <label for="input-description" class="label-input">Descrição</label>
+                    <textarea name="input" id="input-description" placeholder="Sua descrição"></textarea>
+
+                    <div class="div-submit-buttons">
+                        <input type="reset" value="Limpar" class="input-reset">
+                        <input type="submit" value="Salvar" class="input-submit">
+                    </div>
+                </form>
+                <div class="div-alert">
+                    <h2 class="h2-alert">⚠️ CUIDADO ⚠️ </h2>
+                    <p>
+                        RISCO DE EXCLUSÃO DE CONTA.
+                        O BOTÃO DELETARÁ SUA CONTA PARA SEMPRE. 
+                        PENSE BEM NA SUA DECISÃO.  
+                    </p>
+                </div>
+                <div class="div-delete-account">
+                    <a href="#">Quero deletar minha conta</a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="../javascript/menuburguer.js"></script>
+    <script>
+        function testPassowrdStrong() {
+            const div_passwordMessage = document.querySelector(".div-password-list-necessary");
+            div_passwordMessage.style.display = "block";
+            const input_submit = document.querySelector(".input-submit");
+
+            const digits = document.querySelector(".item-digits");
+            const upperCase = document.querySelector(".item-upperCase");
+            const number = document.querySelector(".item-number");
+            const character = document.querySelector(".item-character");
+
+            const password = document.querySelector(".input-password");
+
+            (password.value.length >= 6) ? digits.style.backgroundColor = "green" : digits.style.backgroundColor = "red";;
+            (/[A-Z]/.test(password.value)) ? upperCase.style.backgroundColor = "green" : upperCase.style.backgroundColor = "red";
+            (/[^\w\s]/.test(password.value)) ? character.style.backgroundColor = "green" : character.style.backgroundColor = "red";
+            (/[\d]/.test(password.value)) ? number.style.backgroundColor = "green" : number.style.backgroundColor = "red"; 
+        }
+    </script>
+</body>
+</html>

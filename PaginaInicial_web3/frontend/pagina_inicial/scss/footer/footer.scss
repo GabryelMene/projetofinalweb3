@@ -1,0 +1,10 @@
+@charset "UTF-8"; 
+@import '../root/root'; 
+
+footer {
+    background-color: $search-green;
+    padding: 15px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}

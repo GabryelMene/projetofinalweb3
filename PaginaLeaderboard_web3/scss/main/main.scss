@@ -1,0 +1,47 @@
+@charset "UTF-8"; 
+@import '../root/root';
+
+main {
+    padding: 10px;
+}
+
+.div-profile-points {
+    @include div-default;
+    margin-bottom: 5px;
+    border-radius: 5px 5px 0px 0px;
+    box-shadow: none;
+    font-size: 25px;
+    padding: 5px
+}
+
+.profile-leaderboard-ranking {
+    @include div-default;
+    padding: 15px;
+    box-shadow: none;
+    display: flex;
+    gap: 15px;
+    .profile-ranking-info {
+        font-size: 40px;
+    }
+
+    .profile-ranking {
+        font-size: 50px;
+    }
+}
+
+.leaderboard {
+    margin-top: 10px;
+    .div-user {
+        @include div-default;
+        box-shadow: none;
+        padding: 10px;
+        display: flex;
+        justify-content: space-around;
+        gap: 15px;
+        margin-bottom: 5px;
+
+        .heading-user-ranking {
+
+        }
+    }
+}

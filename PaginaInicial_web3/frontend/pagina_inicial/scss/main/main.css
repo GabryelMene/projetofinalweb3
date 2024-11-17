@@ -1,1 +1,209 @@
-/*# sourceMappingURL=main.css.map */
+.div-image {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -2;
+}
+.div-image .image-ecologic-responsive {
+  width: 100%;
+  height: auto;
+}
+
+.div-points-reward {
+  margin-top: 50px;
+  margin-bottom: 0px;
+  border-radius: 5px 5px 0px 0px;
+  display: flex;
+  justify-content: center;
+}
+.div-points-reward .div-leaf-rewards-father {
+  background-color: #FFFFFF;
+  border: 1px solid #515151;
+  box-shadow: rgba(0, 0, 0, 0.445) 10px 1px 10px;
+  width: 100%;
+}
+@media (min-width: 1260px) {
+  .div-points-reward .div-leaf-rewards-father {
+    width: 500px;
+  }
+}
+.div-points-reward .div-leaf-rewards-title {
+  padding: 5px;
+  color: #FFFFFF;
+  background-color: #009628;
+  border-bottom: 1px solid #515151;
+}
+.div-points-reward .div-leaf-content {
+  padding: 5px;
+}
+.div-points-reward .div-leaf-content .div-rewards-title {
+  margin: 5px;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+.div-points-reward .div-leaf-content .div-rewards-title .l-content-h2 {
+  font-size: 30px;
+}
+.div-points-reward .div-leaf-content .div-rewards-title .rewards-icon {
+  color: #009628;
+  font-size: 35px;
+}
+.div-points-reward .div-leaf-content .div-rewards-points {
+  border-radius: 5px;
+  width: 100%;
+  text-align: center;
+  background-color: #FEB6FF;
+  border-radius: 5px;
+}
+.div-points-reward .div-leaf-content .div-rewards-points .l-points-h2 {
+  font-size: 35px;
+}
+.div-points-reward .div-leaf-content .div-rewards-reedem {
+  padding: 10px 5px;
+}
+.div-points-reward .div-leaf-content .div-rewards-reedem a {
+  display: flex;
+  font-size: 20px;
+}
+
+.leaf-rewards {
+  margin-top: 80px;
+  padding: 10px;
+  width: 100%;
+  align-items: center;
+}
+.leaf-rewards .div-points-mission {
+  background-color: #FFFFFF;
+  border: 1px solid #515151;
+  box-shadow: rgba(0, 0, 0, 0.445) 10px 1px 10px;
+  margin-top: 10px;
+  border-radius: 0px 0px 5px 5px;
+  display: flex;
+  flex-direction: column;
+}
+.leaf-rewards .div-points-mission .div-missions-points-title {
+  background-color: #009628;
+  color: white;
+  padding: 5px;
+}
+.leaf-rewards .div-points-mission .div-missions {
+  padding: 10px;
+}
+@media (min-width: 1240px) {
+  .leaf-rewards .div-points-mission .div-missions {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+  }
+}
+.leaf-rewards .div-points-mission .div-mission {
+  width: 100%;
+  height: 200px;
+  border-radius: 5px;
+  color: #FFFFFF;
+  background-color: red;
+  font-size: 25px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+@media (min-width: 920px) {
+  .leaf-rewards .div-points-mission .div-mission {
+    height: 450px;
+  }
+}
+@media (min-width: 1300px) {
+  .leaf-rewards .div-points-mission .div-mission {
+    height: 500px;
+  }
+}
+@media (min-width: 1920px) {
+  .leaf-rewards .div-points-mission .div-mission {
+    height: 100px;
+    width: 500px;
+  }
+}
+.leaf-rewards .div-points-mission .div-mission .div-mission-title {
+  display: inline;
+  font-size: 30px;
+  padding: 25px;
+}
+@media (min-width: 1240px) {
+  .leaf-rewards .div-points-mission .div-mission .div-mission-title {
+    font-size: 20px;
+  }
+}
+.leaf-rewards .div-points-mission .div-mission .p-mission-point {
+  position: absolute;
+  display: inline;
+}
+
+.div-leaf-products {
+  border: none;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 60px;
+  background-color: #FFFFFF;
+}
+@media (min-width: 1900px) {
+  .div-leaf-products .leaf-products {
+    border: 1px solid black;
+  }
+}
+@media (min-width: 1900px) {
+  .div-leaf-products {
+    flex-direction: row;
+  }
+}
+.div-leaf-products .div-product-title {
+  color: white;
+  padding: 10px;
+  text-align: center;
+  font-size: 30px;
+}
+.div-leaf-products .p-gaming-title {
+  background-color: tomato;
+}
+.div-leaf-products .p-special-event-title {
+  background-color: blueviolet;
+}
+.div-leaf-products .p-fashion-title {
+  background-color: rgb(255, 112, 112);
+}
+.div-leaf-products .div-products {
+  border-radius: 0px 0px 5px 5px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px;
+  padding: 20px;
+  background-color: #FFFFFF;
+}
+.div-leaf-products .div-products .product {
+  height: 150px;
+  width: 150px;
+  background-color: tomato;
+  border-radius: 5px;
+  text-align: center;
+}
+@media (min-width: 750px) {
+  .div-leaf-products .div-products {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media (min-width: 1280px) and (max-width: 1800px) {
+  .div-leaf-products .div-products {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+@media (min-width: 1240px) {
+  .div-leaf-products .div-products {
+    margin: 10px;
+    justify-content: center;
+    gap: 40px;
+  }
+}/*# sourceMappingURL=main.css.map */

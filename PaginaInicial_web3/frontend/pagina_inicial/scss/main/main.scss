@@ -1,0 +1,235 @@
+@charset "UTF-8";
+@import '../root/root';
+
+.div-image {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -2;
+    .image-ecologic-responsive {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.div-points-reward {
+    margin-top: 50px;
+    margin-bottom: 0px;
+    border-radius: 5px 5px 0px 0px;
+    display: flex;
+    justify-content: center;
+
+    .div-leaf-rewards-father {
+        @include div-default;
+        width: 100%;
+
+        @media (min-width: 1260px) {
+            width: 500px;
+        }
+    }
+
+    .div-leaf-rewards-title {
+        padding: 5px;
+        color: $white;
+        background-color: $search-green;
+        border-bottom: 1px solid $gray;
+    }
+
+    .div-leaf-content {
+        padding: 5px;
+
+        .div-rewards-title {
+            margin: 5px;
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+
+            .l-content-h2 {
+                font-size: 30px;
+            }
+
+            .rewards-icon {
+                color: $search-green;
+                font-size: 35px;
+            }    
+        } 
+
+        .div-rewards-points {
+            border-radius: 5px;
+            width: 100%;
+            text-align: center;
+            background-color: $informative-purple;
+            border-radius: 5px;
+
+            .l-points-h2 {
+                font-size: 35px;
+            }
+        }
+
+        .div-rewards-reedem {
+            padding: 10px 5px;
+
+            a {
+                display: flex;
+                font-size: 20px;
+            }
+
+        }
+    }
+}
+
+
+
+.leaf-rewards {
+    margin-top: 80px;
+    padding: 10px;      
+    width: 100%;
+
+    align-items: center;
+
+    
+    .div-points-mission {
+        @include div-default;
+        margin-top: 10px;
+        border-radius: 0px 0px 5px 5px;
+        display: flex;
+        flex-direction: column;
+        
+
+
+        .div-missions-points-title {
+            background-color: $search-green;
+            color: white;
+            padding: 5px;
+        }
+        
+        .div-missions {
+            padding: 10px;
+
+            @media (min-width: 1240px) {
+                display: flex;
+                justify-content: center;
+                gap: 40px;
+            }
+        }
+
+        .div-mission {
+            width: 100%;
+            height: 200px;
+            border-radius: 5px;
+            color: $white;
+            background-color: red;
+            font-size: 25px;
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+
+            @media (min-width: 920px) {
+                height: 450px;
+            }
+
+            @media (min-width: 1300px) {
+                height: 500px;
+            }
+
+            @media (min-width: 1920px) {
+                height: 100px;
+                width: 500px;
+            }
+
+            .div-mission-title {
+                display: inline;
+                font-size: 30px;
+                padding: 25px;
+
+                @media (min-width: 1240px) {
+                    font-size: 20px;
+                }
+            }
+
+            .p-mission-point {
+                position: absolute;
+                display: inline;
+            }
+
+        }
+
+    }
+}
+
+.div-leaf-products {
+    border: none;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 60px;
+    background-color: $white;
+
+    .leaf-products {
+        @media (min-width: 1900px) {
+            border: 1px solid black;
+        }
+    }
+
+    @media (min-width: 1900px) {
+        flex-direction: row;
+    }
+
+    .div-product-title {
+        color: white;
+        padding: 10px;
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .p-gaming-title {
+        background-color: $tomato;
+    }
+
+    .p-special-event-title {
+        background-color: $blueviolet;
+    }
+
+    .p-fashion-title {
+        background-color: $whitebrown-skin;
+    }
+
+    .div-products {   
+        border-radius: 0px 0px 5px 5px;
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+        gap: 5px;
+        padding: 20px;
+        background-color: $white;
+
+        
+
+        .product {
+            height: 150px;
+            width: 150px;
+            background-color: $tomato;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        @media (min-width: 750px) {
+            grid-template-columns: 1fr 1fr 1fr; 
+        }
+
+        @media (min-width: 1280px) and (max-width: 1800px) {
+            grid-template-columns: 1fr 1fr 1fr 1fr; 
+        }
+
+        @media (min-width: 1240px) {
+            margin: 10px;
+            justify-content: center;
+            gap: 40px;
+        }
+    }
+    
+
+}
+

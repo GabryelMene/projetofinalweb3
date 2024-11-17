@@ -7,28 +7,32 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta http-equiv="X-UA-Compatible" content="IE=7">
     <meta name="description" content="Melhor E-commerce que você já viu!">
-    <meta name="keywords"
-        content="loja,comércio,ambiente,pontos,gratis,resgatar,ranking,shop,e-commerce,ecommerce,tecnologia,roupas">
+    <meta name="keywords" content="loja,comércio,ambiente,pontos,gratis,resgatar,ranking,shop,e-commerce,ecommerce,tecnologia,roupas">
     <link rel="stylesheet" href="../scss/body/body.css">
+    <link rel="stylesheet" href="../scss/main/main.css">
     <link rel="stylesheet" href="../scss/header/header.css">
+    <link rel="stylesheet" href="../scss/footer/footer.css">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <title>Leaf - Ganhe junto com o meio ambiente</title>
 </head>
 
 <body>
-    <script src="../javascript/menuburguer.js"></script>
-    <header class="div-header">
-        <div class="div-options-menu_m" id="div-options-menu_m">
+    <header class="header">
+        <nav class="div-options-menu_m" id="div-options-menu_m">
             <span class="material-symbols-outlined span-close" onclick="MenuOpenAndClose_m()">close</span>
             <div class="div-options-select">
                 <ul class="list-options">
                     <li class="option">
                         <span class="material-symbols-outlined span-option">home</span>
-                        <a href="/index.html">início</a>
+                        <a href="./index.html">início</a>
                     </li>
-                    <li class="option">
+                    <li class="option option-profile">
                         <span class="material-symbols-outlined span-option">person</span>
-                        <a href="/profile">Meu perfil</a>
+                        <a href="/profile">Iniciar sessão</a>
+                    </li>
+                    <li class="option option-profile-logged">
+                        <span class="material-symbols-outlined span-option">person</span>
+                        <a href="/profile">Meu perfil </a>
                     </li>
                     <li class="option">
                         <span class="material-symbols-outlined span-option">leaderboard</span>
@@ -36,7 +40,7 @@
                     </li>
                 </ul>
             </div>
-        </div>
+        </nav>
         <div class="div-logo">
             <h1>Leaf</h1>
         </div>
@@ -47,7 +51,7 @@
                     <option value="eletronicos">Eletrônicos</option>
                     <option value="fashion">Fashion</option>
                 </select>
-                <input type="text" placeholder="Pesquisar no Leaf" />
+                <input type="search" placeholder="Pesquisar no Leaf" />
                 <button type="submit">
                     <span class="material-symbols-outlined">search</span>
                 </button>
@@ -69,18 +73,22 @@
                 <span class="cart-number">0</span>
             </div>
         </div>
-        <div class="div-options">
+        <nav class="div-options">
             <span class="material-symbols-outlined span-menu" onclick="MenuOpenAndClose_m()">menu</span>
             <span class="material-symbols-outlined span-settings" onclick="MenuOpenAndClose_pc()">settings</span>
             <div class="div-options-menu_pc" id="div-options-menu_pc">
                 <ul class="list-options">
                     <li class="option">
                         <span class="material-symbols-outlined">home</span>
-                        <a href="/index.html">início</a>
+                        <a href="./index.html">início</a>
                     </li>
-                    <li class="option">
-                        <span class="material-symbols-outlined">person</span>
-                        <a href="/profile">Meu perfil</a>
+                    <li class="option option-profile">
+                        <span class="material-symbols-outlined span-option">person</span>
+                        <a href="/profile">Log-in</a>
+                    </li>
+                    <li class="option option-profile-logged">
+                        <span class="material-symbols-outlined span-option">person</span>
+                        <a href="/profile">Meu perfil </a>
                     </li>
                     <li class="option">
                         <span class="material-symbols-outlined">leaderboard</span>
@@ -88,11 +96,145 @@
                     </li>
                 </ul>
             </div>
-        </div>
+        </nav>
     </header>
-    <main class="div-main">
-        <div class="Image-div"></div>
+    <main>
+        <div class="div-image">
+            <img src="../images/ecologic_edited.jpg"
+                alt="Uma mãe segurando um galho pequeno(papel de parede do website)" class="image-ecologic-responsive">
+        </div>
+        <div class="div-points-reward">
+            <div class="div-leaf-rewards-father">
+                <div class="div-leaf-rewards">
+                    <div class="div-leaf-rewards-title">
+                        <h2>Leaf Rewards</h2>
+                    </div>
+                    <div class="div-leaf-content">
+                        <div class="div-rewards-title">
+                            <h2 class="l-content-h2">Seus pontos</h2>
+                            <span class="material-symbols-outlined rewards-icon">toll</span>
+                        </div>
+                        <div class="div-rewards-points">
+                            <h2 class="l-points-h2">0</h2>
+                        </div>
+                        <div class="div-rewards-reedem">
+                            <a href="/resgatar">
+                                Resgatar <span class="material-symbols-outlined">chevron_right</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="leaf-rewards">
+            <div class="div-points-mission">
+                <div class="div-missions-points-title">
+                    <h2>Conjunto diário</h2>
+                </div>
+                <div class="div-missions">
+                    <div class="div-mission">
+                        <div class="div-mission-title">
+                            <h2>Missão: Salve o mundo</h2>
+                            <p>Recompensa: 10 pontos</p>
+                        </div>
+                    </div>
+                    <div class="div-mission">
+                        <div class="div-mission-title">
+                            <h2>Missão: +natureza -celular</h2>
+                            <p>Recompensa: 10 pontos</p>
+                        </div>
+                    </div>
+                    <div class="div-mission">
+                        <div class="div-mission-title">
+                            <h2>Missão </h2>
+                            <p>Recompensa: 10 pontos</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="div-leaf-products">
+            <div class="leaf-products p-gaming">
+                <div class="div-product-title p-gaming-title">
+                    <h2>Gaming</h2>
+                </div>
+                <div class="div-products div-gaming-products">
+                    <div class="product">
+                        Produto
+                    </div>
+                    <div class="product">
+                        Produto
+                    </div>
+                    <div class="product">
+                        Produto
+                    </div>
+                    <div class="product">
+                        Produto
+                    </div>
+                    <div class="product">
+                        Produto
+                    </div>
+                    <div class="product">
+                        Produto
+                    </div>
+                </div>
+            </div>
+            <div class="leaf-products p-special-event">
+                <div class="div-product-title p-special-event-title">
+                    <h2>Produtos Natal</h2>
+                </div>
+                <div class="div-products div-special-event-products">
+                    <div class="product">
+                        Produto
+                    </div>
+                    <div class="product">
+                        Produto
+                    </div>
+                    <div class="product">
+                        Produto
+                    </div>
+                    <div class="product">
+                        Produto
+                    </div>
+                    <div class="product">
+                        Produto
+                    </div>
+                    <div class="product">
+                        Produto
+                    </div>
+                </div>
+            </div>
+            <div class="leaf-products p-fashion">
+                <div class="div-product-title p-fashion-title">
+                    <h2>Moda</h2>
+                </div>
+                <div class="div-products div-fashion-products">
+                    <div class="product">
+                        Produto
+                    </div>
+                    <div class="product">
+                        Produto
+                    </div>
+                    <div class="product">
+                        Produto
+                    </div>
+                    <div class="product">
+                        Produto
+                    </div>
+                    <div class="product">
+                        Produto
+                    </div>
+                    <div class="product">
+                        Produto
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
+    <footer>
+        <p>Leaf Company, salvando o mundo com você. </p>
+    </footer>
+    <script src="../javascript/menuburguer.js"></script>
 </body>
 
 </html>

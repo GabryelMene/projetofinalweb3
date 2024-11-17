@@ -1,0 +1,45 @@
+main {
+  padding: 10px;
+}
+
+.div-profile-points {
+  background-color: #FFFFFF;
+  border: 1px solid #515151;
+  box-shadow: rgba(0, 0, 0, 0.445) 10px 1px 10px;
+  margin-bottom: 5px;
+  border-radius: 5px 5px 0px 0px;
+  box-shadow: none;
+  font-size: 25px;
+  padding: 5px;
+}
+
+.profile-leaderboard-ranking {
+  background-color: #FFFFFF;
+  border: 1px solid #515151;
+  box-shadow: rgba(0, 0, 0, 0.445) 10px 1px 10px;
+  padding: 15px;
+  box-shadow: none;
+  display: flex;
+  gap: 15px;
+}
+.profile-leaderboard-ranking .profile-ranking-info {
+  font-size: 40px;
+}
+.profile-leaderboard-ranking .profile-ranking {
+  font-size: 50px;
+}
+
+.leaderboard {
+  margin-top: 10px;
+}
+.leaderboard .div-user {
+  background-color: #FFFFFF;
+  border: 1px solid #515151;
+  box-shadow: rgba(0, 0, 0, 0.445) 10px 1px 10px;
+  box-shadow: none;
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+  gap: 15px;
+  margin-bottom: 5px;
+}/*# sourceMappingURL=main.css.map */
