@@ -113,16 +113,16 @@
                     <input type="file" name="profile-picture-user" id="input-profile-pfp">
                     
                     <label for="input-name" class="label-input">Nome</label>
-                    <input type="text" name="name" class="input-name input-profile" placeholder="Seu novo nome">
+                    <input type="text" name="name" class="input-name input-profile" placeholder="Seu novo nome" required>
                     
                     <label for="input-email" class="label-input">Email</label>
-                    <input type="email" name="email" class="input-email input-profile" placeholder="Seu melhor email">
+                    <input type="email" name="email" class="input-email input-profile" placeholder="Seu melhor email" required>
                     
                     <label for="input-email-save" class="label-input">Email de recuperação</label>
-                    <input type="email" name="email-save" class="input-email-save input-profile" placeholder="Seu novo email de recuperação">
+                    <input type="email" name="email-save" class="input-email-save input-profile" placeholder="Seu novo email de recuperação" required>
                     
                     <label for="input-password" class="label-input">Senha</label>
-                    <input type="password" name="password" class="input-password input-profile"  minlength="6" placeholder="Sua nova senha"  pattern="^(?=.*[A-Z])(?=.*\d)(?=.*[^\w\s]).{6,}$" onkeyup="testPassowrdStrong()">
+                    <input type="password" name="password" class="input-password input-profile"  minlength="6" placeholder="Sua nova senha"  pattern="^(?=.*[A-Z])(?=.*\d)(?=.*[^\w\s]).{6,}$" onkeyup="testPasswordStrong()" required>
                     <div class="div-password-list-necessary">
                         <ul class="list-password-necessary">
                             <li class="item item-digits">6 dígitos</li>
@@ -156,7 +156,7 @@
     </main>
     <script src="../javascript/menuburguer.js"></script>
     <script>
-        function testPassowrdStrong() {
+        function testPasswordStrong() {
             const div_passwordMessage = document.querySelector(".div-password-list-necessary");
             div_passwordMessage.style.display = "block";
             const input_submit = document.querySelector(".input-submit");
