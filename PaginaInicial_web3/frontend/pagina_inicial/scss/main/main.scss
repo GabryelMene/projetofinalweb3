@@ -78,15 +78,60 @@
     }
 }
 
+.div-leaf-profile {
+    @include div-default;
+    margin-left: 10px;
+    padding: 10px;
+    width: 250px;
+    
 
+    .profile {
+        width: 150px;
+        display: flex;
+        gap: 10px;
+
+        img {
+            width: 100%;
+        }
+
+        .hello-profile {
+            width: 100%;
+        }
+    }
+
+    .profile-options {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+
+        .sync-product {
+            background-color: $search-green;
+            color: $white;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        
+        .log-out {
+            padding: 10px;
+            border: 1px solid red;
+            border-radius: 5px;
+            color: red;
+        }
+    }
+} 
 
 .leaf-rewards {
     margin-top: 80px;
-    padding: 10px;      
+    padding: 10px;  
+    margin: auto; 
     width: 100%;
 
     align-items: center;
 
+    @media (min-width: 1920px) {
+        width: 80%;
+    }
     
     .div-points-mission {
         @include div-default;
@@ -171,6 +216,8 @@
     .leaf-products {
         @media (min-width: 1900px) {
             border: 1px solid black;
+            border-bottom: 0;
+            margin-bottom: 0;
         }
     }
 

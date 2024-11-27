@@ -108,6 +108,22 @@
                 height: 100px;
             }
 
+            .div-private-profile {
+                margin-top: 10px;
+                font-size: 15pt;
+                display: flex;
+                justify-content: left;
+                gap: 5px;
+                padding: 5px;
+                height: 35px;
+                color: white;
+                border-radius: 5px;
+                background-color: tomato;
+                transition: background-color 600ms linear;
+                
+                label, input[type="checkbox"] {cursor: pointer;}
+            }
+
             .div-submit-buttons {
                 margin: 10px;
             }
@@ -124,6 +140,7 @@
                 margin-right: 30px;
                 cursor: pointer;
             }
+
 
             .input-submit {
                 color: white;

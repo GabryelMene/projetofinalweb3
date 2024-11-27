@@ -93,6 +93,22 @@
   padding: 0px;
   height: 100px;
 }
+.div-profile .div-form-profile form .div-private-profile {
+  margin-top: 10px;
+  font-size: 15pt;
+  display: flex;
+  justify-content: left;
+  gap: 5px;
+  padding: 5px;
+  height: 35px;
+  color: white;
+  border-radius: 5px;
+  background-color: tomato;
+  transition: background-color 600ms linear;
+}
+.div-profile .div-form-profile form .div-private-profile label, .div-profile .div-form-profile form .div-private-profile input[type=checkbox] {
+  cursor: pointer;
+}
 .div-profile .div-form-profile form .div-submit-buttons {
   margin: 10px;
 }

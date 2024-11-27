@@ -135,6 +135,11 @@
                     <label for="input-description" class="label-input">Descrição</label>
                     <textarea name="input" id="input-description" placeholder="Sua descrição"></textarea>
 
+                    <div class="div-private-profile">
+                        <label for="private-profile" title="Com perfil privado, os usuários não conseguirão ver seus produtos, pontos, ranking e classificação.">Perfil privado</label>
+                        <input type="checkbox" name="private-profile" id="private-profile" value="true"> 
+                    </div>
+
                     <div class="div-submit-buttons">
                         <input type="reset" value="Limpar" class="input-reset">
                         <input type="submit" value="Salvar" class="input-submit">
@@ -156,24 +161,7 @@
     </main>
     <script src="../javascript/menuburguer.js"></script>
     <script src="../javascript/init-validation.js"></script>
-    <script>
-        function testPasswordStrong() {
-            const div_passwordMessage = document.querySelector(".div-password-list-necessary");
-            div_passwordMessage.style.display = "block";
-            const input_submit = document.querySelector(".input-submit");
-
-            const digits = document.querySelector(".item-digits");
-            const upperCase = document.querySelector(".item-upperCase");
-            const number = document.querySelector(".item-number");
-            const character = document.querySelector(".item-character");
-
-            const password = document.querySelector(".input-password");
-
-            (password.value.length >= 6) ? digits.style.backgroundColor = "green" : digits.style.backgroundColor = "red";;
-            (/[A-Z]/.test(password.value)) ? upperCase.style.backgroundColor = "green" : upperCase.style.backgroundColor = "red";
-            (/[^\w\s]/.test(password.value)) ? character.style.backgroundColor = "green" : character.style.backgroundColor = "red";
-            (/[\d]/.test(password.value)) ? number.style.backgroundColor = "green" : number.style.backgroundColor = "red"; 
-        }
-    </script>
+    <script src="../javascript/testPassword.js"></script>
+    <script src="../javascript/checkBoxColorful.js"></script>
 </body>
 </html>

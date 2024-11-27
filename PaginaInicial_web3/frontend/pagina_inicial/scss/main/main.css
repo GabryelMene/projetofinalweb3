@@ -20,6 +20,7 @@
   background-color: #FFFFFF;
   border: 1px solid #515151;
   box-shadow: rgba(0, 0, 0, 0.445) 10px 1px 10px;
+  border-radius: 5px;
   width: 100%;
 }
 @media (min-width: 1260px) {
@@ -67,16 +68,62 @@
   font-size: 20px;
 }
 
+.div-leaf-profile {
+  background-color: #FFFFFF;
+  border: 1px solid #515151;
+  box-shadow: rgba(0, 0, 0, 0.445) 10px 1px 10px;
+  border-radius: 5px;
+  margin-left: 10px;
+  padding: 10px;
+  width: 250px;
+}
+.div-leaf-profile .profile {
+  width: 150px;
+  display: flex;
+  gap: 10px;
+}
+.div-leaf-profile .profile img {
+  width: 100%;
+}
+.div-leaf-profile .profile .hello-profile {
+  width: 100%;
+}
+.div-leaf-profile .profile-options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+}
+.div-leaf-profile .profile-options .sync-product {
+  background-color: #009628;
+  color: #FFFFFF;
+  padding: 10px;
+  border-radius: 5px;
+}
+.div-leaf-profile .profile-options .log-out {
+  padding: 10px;
+  border: 1px solid red;
+  border-radius: 5px;
+  color: red;
+}
+
 .leaf-rewards {
   margin-top: 80px;
   padding: 10px;
+  margin: auto;
   width: 100%;
   align-items: center;
+}
+@media (min-width: 1920px) {
+  .leaf-rewards {
+    width: 80%;
+  }
 }
 .leaf-rewards .div-points-mission {
   background-color: #FFFFFF;
   border: 1px solid #515151;
   box-shadow: rgba(0, 0, 0, 0.445) 10px 1px 10px;
+  border-radius: 5px;
   margin-top: 10px;
   border-radius: 0px 0px 5px 5px;
   display: flex;
@@ -153,6 +200,8 @@
 @media (min-width: 1900px) {
   .div-leaf-products .leaf-products {
     border: 1px solid black;
+    border-bottom: 0;
+    margin-bottom: 0;
   }
 }
 @media (min-width: 1900px) {
