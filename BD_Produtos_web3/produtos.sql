@@ -9,6 +9,5 @@ CREATE TABLE `tb_produtos` (
     `preco` DOUBLE NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4; 
 
-
 SHOW TABLES; 
 
