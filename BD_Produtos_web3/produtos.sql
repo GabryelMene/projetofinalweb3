@@ -1,6 +1,6 @@
 USE leafdb;
 
-CREATE TABLE `tb_produtos` (
+CREATE TABLE IF NOT EXISTS `tb_produtos` (
 	`id` INT NOT NULL PRIMARY KEY AUTO_INCREMENT, 
     `nome` VARCHAR(150) NOT NULL, 
     `imagem` LONGBLOB,

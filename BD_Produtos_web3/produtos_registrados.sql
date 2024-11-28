@@ -1,6 +1,6 @@
 USE leafdb; 
 
-CREATE TABLE `tb_produtosRegistrados` (
+CREATE TABLE IF NOT EXISTS `tb_produtosRegistrados` (
     `id` INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
     `idUsuario_registrados` INT NOT NULL, 
     `idProduto_registrados` INT NOT NULL,
