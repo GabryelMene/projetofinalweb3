@@ -6,7 +6,8 @@ CREATE TABLE `tb_produtos` (
     `imagem` LONGBLOB,
     `marca` VARCHAR(50) NOT NULL,
     `modelo` VARCHAR(50) NOT NULL,
-    `descricao` VARCHAR(300) NOT NULL,  
+    `descricao` VARCHAR(300) NOT NULL, 
+    `enderecoProduto` VARCHAR(30), 
     `preco` DOUBLE NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4; 
 
