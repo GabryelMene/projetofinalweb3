@@ -1,18 +1,22 @@
 @charset "UTF-8"; 
 
 $green-background-color: #F0FFED; 
-$white: #FFFFFF; 
+$white: #e7e7e7; 
 $blue-button: #4F72FF;  
 $informative-purple: #FEB6FF; 
-$search-green: #009628;
+//$search-green: #009628;
+$search-green: #008b25;
 $gray: #515151; 
 $alpha-black: rgba(0, 0, 0, 0.445); 
 
 
 // Products variables 
-$tomato: tomato;
-$blueviolet: blueviolet;
-$whitebrown-skin: rgb(255, 112, 112); 
+// gaming
+$tomato: rgb(177, 27, 0);
+// produtos natal
+$blueviolet: rgb(71, 0, 138);
+// fashion
+$whitebrown-skin: rgb(163, 58, 58); 
 
 @mixin flex-row-header {
     display: flex;
@@ -54,4 +58,11 @@ $whitebrown-skin: rgb(255, 112, 112);
     border: 1px solid $gray;
     box-shadow: $alpha-black 10px 1px 10px;
     border-radius: 5px;
+}
+
+@mixin green-header {
+    padding: 5px;
+    color: $white;
+    background-color: $search-green;
+    border-bottom: 1px solid $gray;
 }

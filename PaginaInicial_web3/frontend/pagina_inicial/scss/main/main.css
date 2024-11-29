@@ -1,3 +1,12 @@
+.div-leaf-profile {
+  display: none;
+}
+@media (min-width: 1900px) {
+  .div-leaf-profile {
+    display: block;
+  }
+}
+
 .div-image {
   position: absolute;
   top: 0;
@@ -14,24 +23,30 @@
   margin-bottom: 0px;
   border-radius: 5px 5px 0px 0px;
   display: flex;
+  gap: 10px;
   justify-content: center;
 }
 .div-points-reward .div-leaf-rewards-father {
-  background-color: #FFFFFF;
+  background-color: #e7e7e7;
   border: 1px solid #515151;
   box-shadow: rgba(0, 0, 0, 0.445) 10px 1px 10px;
   border-radius: 5px;
   width: 100%;
 }
-@media (min-width: 1260px) {
+@media (min-width: 900px) {
   .div-points-reward .div-leaf-rewards-father {
     width: 500px;
   }
 }
+@media (min-width: 1900px) {
+  .div-points-reward .div-leaf-rewards-father {
+    width: 300px;
+  }
+}
 .div-points-reward .div-leaf-rewards-title {
   padding: 5px;
-  color: #FFFFFF;
-  background-color: #009628;
+  color: #e7e7e7;
+  background-color: #008b25;
   border-bottom: 1px solid #515151;
 }
 .div-points-reward .div-leaf-content {
@@ -46,19 +61,35 @@
 .div-points-reward .div-leaf-content .div-rewards-title .l-content-h2 {
   font-size: 30px;
 }
+@media (max-width: 1800px) {
+  .div-points-reward .div-leaf-content .div-rewards-title .l-content-h2 {
+    font-size: 40px;
+  }
+}
 .div-points-reward .div-leaf-content .div-rewards-title .rewards-icon {
-  color: #009628;
+  color: #008b25;
   font-size: 35px;
+}
+@media (max-width: 1800px) {
+  .div-points-reward .div-leaf-content .div-rewards-title .rewards-icon {
+    font-size: 60px;
+  }
 }
 .div-points-reward .div-leaf-content .div-rewards-points {
   border-radius: 5px;
   width: 100%;
   text-align: center;
-  background-color: #FEB6FF;
   border-radius: 5px;
+  background-color: #008b25;
+  color: white;
 }
 .div-points-reward .div-leaf-content .div-rewards-points .l-points-h2 {
   font-size: 35px;
+}
+@media (max-width: 1800px) {
+  .div-points-reward .div-leaf-content .div-rewards-points .l-points-h2 {
+    font-size: 60px;
+  }
 }
 .div-points-reward .div-leaf-content .div-rewards-reedem {
   padding: 10px 5px;
@@ -68,8 +99,38 @@
   font-size: 20px;
 }
 
+.div-pc-challenges {
+  background-color: #e7e7e7;
+  border: 1px solid #515151;
+  box-shadow: rgba(0, 0, 0, 0.445) 10px 1px 10px;
+  border-radius: 5px;
+  display: none;
+}
+@media (min-width: 1900px) {
+  .div-pc-challenges {
+    display: block;
+  }
+}
+.div-pc-challenges .title-pc-challenges {
+  padding: 5px;
+  color: #e7e7e7;
+  background-color: #008b25;
+  border-bottom: 1px solid #515151;
+}
+.div-pc-challenges .flex-pc-challenges {
+  display: flex;
+  gap: 15px;
+  padding: 10px;
+}
+.div-pc-challenges .pc-challenge {
+  height: 150px;
+  width: 150px;
+  border-radius: 5px;
+  background-color: rgb(177, 27, 0);
+}
+
 .div-leaf-profile {
-  background-color: #FFFFFF;
+  background-color: #e7e7e7;
   border: 1px solid #515151;
   box-shadow: rgba(0, 0, 0, 0.445) 10px 1px 10px;
   border-radius: 5px;
@@ -84,6 +145,8 @@
 }
 .div-leaf-profile .profile img {
   width: 100%;
+  border-radius: 100%;
+  border: 1px solid black;
 }
 .div-leaf-profile .profile .hello-profile {
   width: 100%;
@@ -95,8 +158,8 @@
   margin-top: 10px;
 }
 .div-leaf-profile .profile-options .sync-product {
-  background-color: #009628;
-  color: #FFFFFF;
+  background-color: #008b25;
+  color: #e7e7e7;
   padding: 10px;
   border-radius: 5px;
 }
@@ -114,13 +177,13 @@
   width: 100%;
   align-items: center;
 }
-@media (min-width: 1920px) {
+@media (min-width: 1900px) {
   .leaf-rewards {
-    width: 80%;
+    display: none;
   }
 }
 .leaf-rewards .div-points-mission {
-  background-color: #FFFFFF;
+  background-color: #e7e7e7;
   border: 1px solid #515151;
   box-shadow: rgba(0, 0, 0, 0.445) 10px 1px 10px;
   border-radius: 5px;
@@ -130,7 +193,7 @@
   flex-direction: column;
 }
 .leaf-rewards .div-points-mission .div-missions-points-title {
-  background-color: #009628;
+  background-color: #008b25;
   color: white;
   padding: 5px;
 }
@@ -148,8 +211,8 @@
   width: 100%;
   height: 200px;
   border-radius: 5px;
-  color: #FFFFFF;
-  background-color: red;
+  color: #e7e7e7;
+  background-color: rgb(177, 27, 0);
   font-size: 25px;
   margin-bottom: 10px;
   display: flex;
@@ -191,11 +254,20 @@
 .div-leaf-products {
   border: none;
   margin: 10px;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 60px;
-  background-color: #FFFFFF;
+}
+@media (min-width: 1900px) {
+  .div-leaf-products {
+    height: 600px;
+    padding: 0;
+  }
+}
+.div-leaf-products .leaf-products {
+  background-color: #e7e7e7;
 }
 @media (min-width: 1900px) {
   .div-leaf-products .leaf-products {
@@ -216,13 +288,13 @@
   font-size: 30px;
 }
 .div-leaf-products .p-gaming-title {
-  background-color: tomato;
+  background-color: rgb(177, 27, 0);
 }
 .div-leaf-products .p-special-event-title {
-  background-color: blueviolet;
+  background-color: rgb(71, 0, 138);
 }
 .div-leaf-products .p-fashion-title {
-  background-color: rgb(255, 112, 112);
+  background-color: rgb(163, 58, 58);
 }
 .div-leaf-products .div-products {
   border-radius: 0px 0px 5px 5px;
@@ -230,12 +302,12 @@
   grid-template-columns: 1fr 1fr;
   gap: 5px;
   padding: 20px;
-  background-color: #FFFFFF;
+  background-color: #e7e7e7;
 }
 .div-leaf-products .div-products .product {
   height: 150px;
   width: 150px;
-  background-color: tomato;
+  background-color: rgb(177, 27, 0);
   border-radius: 5px;
   text-align: center;
 }
@@ -255,4 +327,9 @@
     justify-content: center;
     gap: 40px;
   }
+}
+
+.pc-options {
+  width: 500px;
+  display: flex;
 }/*# sourceMappingURL=main.css.map */

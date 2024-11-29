@@ -1,6 +1,15 @@
 @charset "UTF-8";
 @import '../root/root';
 
+.div-leaf-profile {
+    display: none;
+
+    
+    @media (min-width: 1900px) {
+        display: block  ;
+    }
+}
+
 .div-image {
     position: absolute;
     top: 0;
@@ -17,22 +26,24 @@
     margin-bottom: 0px;
     border-radius: 5px 5px 0px 0px;
     display: flex;
+    gap: 10px;
     justify-content: center;
 
     .div-leaf-rewards-father {
         @include div-default;
         width: 100%;
 
-        @media (min-width: 1260px) {
+        @media (min-width: 900px) {
             width: 500px;
+        }
+
+        @media (min-width: 1900px) {
+            width: 300px;
         }
     }
 
     .div-leaf-rewards-title {
-        padding: 5px;
-        color: $white;
-        background-color: $search-green;
-        border-bottom: 1px solid $gray;
+        @include green-header;
     }
 
     .div-leaf-content {
@@ -46,11 +57,19 @@
 
             .l-content-h2 {
                 font-size: 30px;
+
+                @media (max-width: 1800px) {
+                    font-size: 40px;
+                }
             }
 
             .rewards-icon {
                 color: $search-green;
                 font-size: 35px;
+
+                @media (max-width: 1800px) {
+                    font-size: 60px;
+                }
             }    
         } 
 
@@ -58,11 +77,17 @@
             border-radius: 5px;
             width: 100%;
             text-align: center;
-            background-color: $informative-purple;
             border-radius: 5px;
+            background-color: $search-green;
+            color: white;
+
 
             .l-points-h2 {
                 font-size: 35px;
+
+                @media (max-width: 1800px) {
+                    font-size: 60px;
+                }
             }
         }
 
@@ -75,6 +100,32 @@
             }
 
         }
+    }
+}
+
+.div-pc-challenges {
+    @include div-default;
+    display: none;
+
+    @media (min-width: 1900px) {
+        display: block;
+    }
+
+    .title-pc-challenges {
+        @include green-header;
+    }
+
+    .flex-pc-challenges {
+        display: flex;
+        gap: 15px;
+        padding: 10px;
+    }
+
+    .pc-challenge {
+        height: 150px;
+        width: 150px;
+        border-radius: 5px;
+        background-color: $tomato;
     }
 }
 
@@ -92,6 +143,9 @@
 
         img {
             width: 100%;
+            border-radius: 100%;
+            border: 1px solid black;
+            
         }
 
         .hello-profile {
@@ -119,7 +173,8 @@
             color: red;
         }
     }
-} 
+}
+ 
 
 .leaf-rewards {
     margin-top: 80px;
@@ -129,8 +184,8 @@
 
     align-items: center;
 
-    @media (min-width: 1920px) {
-        width: 80%;
+    @media (min-width: 1900px) {
+        display: none;
     }
     
     .div-points-mission {
@@ -140,8 +195,6 @@
         display: flex;
         flex-direction: column;
         
-
-
         .div-missions-points-title {
             background-color: $search-green;
             color: white;
@@ -163,7 +216,7 @@
             height: 200px;
             border-radius: 5px;
             color: $white;
-            background-color: red;
+            background-color: $tomato;
             font-size: 25px;
             margin-bottom: 10px;
             display: flex;
@@ -207,11 +260,18 @@
 .div-leaf-products {
     border: none;
     margin: 10px;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 60px;
-    background-color: $white;
+
+    @media (min-width: 1900px) {
+        
+        height: 600px;
+        
+        padding: 0;
+    }
 
     .leaf-products {
         @media (min-width: 1900px) {
@@ -219,6 +279,8 @@
             border-bottom: 0;
             margin-bottom: 0;
         }
+
+        background-color: $white;
     }
 
     @media (min-width: 1900px) {
@@ -280,3 +342,8 @@
 
 }
 
+.pc-options {
+    width: 500px;
+    
+    display: flex;
+}
