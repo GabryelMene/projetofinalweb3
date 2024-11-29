@@ -27,5 +27,6 @@
   <li>MySQL</li>
   <li>GIT</li>
   <li>GitHub</li>
+  <li>Figma</li>
 </ul>
 
