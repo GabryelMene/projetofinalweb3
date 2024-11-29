@@ -1,5 +1,5 @@
 .div-profile {
-  background-color: #FFFFFF;
+  background-color: white;
   border: 1px solid #515151;
   padding: 15px;
   border-radius: 3px;
@@ -153,4 +153,8 @@
 }
 .div-profile .div-delete-account a {
   color: white;
+}
+
+main {
+  margin-top: 70px;
 }/*# sourceMappingURL=main.css.map */

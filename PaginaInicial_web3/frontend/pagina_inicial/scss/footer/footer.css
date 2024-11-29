@@ -4,4 +4,9 @@ footer {
   text-align: center;
   color: white;
   font-size: 20px;
+  font-weight: bolder;
+  letter-spacing: 4px;
+}
+footer .p-footer-1 {
+  margin-bottom: 5px;
 }/*# sourceMappingURL=footer.css.map */

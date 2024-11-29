@@ -22,7 +22,7 @@
 }
 
 .div-points-reward {
-    margin-top: 50px;
+    margin-top: 80px;
     margin-bottom: 0px;
     border-radius: 5px 5px 0px 0px;
     display: flex;
@@ -346,4 +346,28 @@
     width: 500px;
     
     display: flex;
+}
+
+.div-iframe-father {
+    margin: 10px;
+    display: none;
+    justify-content: center;
+
+    @media (min-width: 1900px) {
+        display: flex;
+    }
+
+    .div-iframe {
+        @include div-default;
+        
+    }
+
+    .h3-iframe-title {
+        @include green-header; 
+    }
+
+    .iframe {
+        height: 300px;
+        width: 1080px;
+    }
 }

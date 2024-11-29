@@ -7,17 +7,20 @@ header {
     height: 70px;
     background-color: $white;
     border-bottom: 1px solid $gray;
+    position: fixed;
+    z-index: 0;
     top: 0;
 }
 
 .div-options-menu_m {
-    position: absolute;
-    z-index: 999;
-    display: none;
+    position: fixed;
+    z-index: 9;
+    display: block;
     color: white;
     background-color: $search-green;
     height: 100%; 
     width: 100%;
+    right: -1920px;  
 
     .span-close {
         font-size: 70px;
@@ -54,6 +57,38 @@ header {
         color: white;
     }
 }
+
+.div-options-menu_m_open {
+    right: -1920px;  
+    visibility: visible;
+    animation: MenuMoveOpen 0.5s forwards;
+
+    @keyframes MenuMoveOpen {
+        from { 
+            right: -1920px;  
+            visibility: visible;
+        }
+        to { right: 0px; }
+    }
+}
+
+.div-options-menu_m_close {
+    right: -1920px;      
+    visibility: hidden;
+    animation: MenuMoveClose 1s forwards;
+    
+    @keyframes MenuMoveClose {
+        from { 
+            right: 0px; 
+            visibility: visible;
+        }
+        to { 
+            right: -1920px;  
+            visibility: hidden;
+        }
+    }
+}
+
 
 .div-logo {
     @include flex-mid;
@@ -201,6 +236,72 @@ header {
         @include options-white;
 
         .cart-number {
+            font-size: 30px;
+        }
+
+        @media (min-width: 1600px) {
+            width: 100px;
+        }
+    }
+
+    span {
+        font-size: 35px;
+    }
+}
+
+.mobile-wallet-cart {
+    display: flex;
+    gap: 50px;
+}
+
+.div-wallet-option-m {
+    
+    display: flex;
+    color: white;
+    
+    @media (min-width: 1185px) {
+        display: flex;
+    }
+
+
+    .wallet-m {
+        @include flex-mid;
+        @include options-green;
+    }
+
+    .wallet-number-m {
+        @include flex-mid;
+        @include options-white;
+
+        @media (min-width: 1600px) {
+            width: 100px;
+        }
+    }
+
+    span {
+        font-size: 35px;
+    }
+}
+
+.div-cart-option-m {
+    color: white; 
+    display: flex;
+
+    @media (min-width: 712px) {
+        @include flex-mid
+    }
+    
+
+    .cart-m {
+        @include flex-mid;
+        @include options-green;
+    }
+
+    .cart-numbers-m {
+        @include flex-mid;
+        @include options-white;
+
+        .cart-number-m {
             font-size: 30px;
         }
 

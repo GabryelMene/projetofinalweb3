@@ -5,19 +5,21 @@ header {
   gap: 20px;
   width: 100vw;
   height: 70px;
-  background-color: #FFFFFF;
+  background-color: white;
   border-bottom: 1px solid #515151;
+  position: fixed;
   top: 0;
 }
 
 .div-options-menu_m {
-  position: absolute;
-  z-index: 999;
-  display: none;
+  position: fixed;
+  z-index: 9;
+  display: block;
   color: white;
   background-color: #009628;
   height: 100%;
   width: 100%;
+  right: -1920px;
 }
 .div-options-menu_m .span-close {
   font-size: 70px;
@@ -49,6 +51,37 @@ header {
 }
 .div-options-menu_m a {
   color: white;
+}
+
+.div-options-menu_m_open {
+  right: -1920px;
+  visibility: visible;
+  animation: MenuMoveOpen 0.5s forwards;
+}
+@keyframes MenuMoveOpen {
+  from {
+    right: -1920px;
+    visibility: visible;
+  }
+  to {
+    right: 0px;
+  }
+}
+
+.div-options-menu_m_close {
+  right: -1920px;
+  visibility: hidden;
+  animation: MenuMoveClose 1s forwards;
+}
+@keyframes MenuMoveClose {
+  from {
+    right: 0px;
+    visibility: visible;
+  }
+  to {
+    right: -1920px;
+    visibility: hidden;
+  }
 }
 
 .div-logo {
@@ -182,7 +215,7 @@ header {
   align-items: center;
   justify-content: center;
   color: #515151;
-  background-color: #FFFFFF;
+  background-color: white;
   padding: 25px;
   height: 40px;
   width: 70px;
@@ -230,7 +263,7 @@ header {
   align-items: center;
   justify-content: center;
   color: #515151;
-  background-color: #FFFFFF;
+  background-color: white;
   padding: 25px;
   height: 40px;
   width: 70px;
@@ -256,7 +289,7 @@ header {
   align-items: center;
   justify-content: center;
   background-color: #009628;
-  color: #FFFFFF;
+  color: white;
   width: 65px;
 }
 @media (min-width: 1600px) {
@@ -283,6 +316,107 @@ header {
   }
 }
 
+.mobile-wallet-cart {
+  display: flex;
+  gap: 50px;
+}
+
+.div-wallet-option-m {
+  display: flex;
+  color: white;
+}
+@media (min-width: 1185px) {
+  .div-wallet-option-m {
+    display: flex;
+  }
+}
+.div-wallet-option-m .wallet-m {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: #009628;
+  padding: 25px;
+  height: 40px;
+  width: 70px;
+  border: 1px solid #515151;
+  border-radius: 5px 0px 0px 5px;
+  border-right: 0px;
+}
+.div-wallet-option-m .wallet-number-m {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: #515151;
+  background-color: white;
+  padding: 25px;
+  height: 40px;
+  width: 70px;
+  border: 1px solid #515151;
+  border-radius: 0px 5px 5px 0px;
+  border-left: 0px;
+}
+@media (min-width: 1600px) {
+  .div-wallet-option-m .wallet-number-m {
+    width: 100px;
+  }
+}
+.div-wallet-option-m span {
+  font-size: 35px;
+}
+
+.div-cart-option-m {
+  color: white;
+  display: flex;
+}
+@media (min-width: 712px) {
+  .div-cart-option-m {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.div-cart-option-m .cart-m {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: #009628;
+  padding: 25px;
+  height: 40px;
+  width: 70px;
+  border: 1px solid #515151;
+  border-radius: 5px 0px 0px 5px;
+  border-right: 0px;
+}
+.div-cart-option-m .cart-numbers-m {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: #515151;
+  background-color: white;
+  padding: 25px;
+  height: 40px;
+  width: 70px;
+  border: 1px solid #515151;
+  border-radius: 0px 5px 5px 0px;
+  border-left: 0px;
+}
+.div-cart-option-m .cart-numbers-m .cart-number-m {
+  font-size: 30px;
+}
+@media (min-width: 1600px) {
+  .div-cart-option-m .cart-numbers-m {
+    width: 100px;
+  }
+}
+.div-cart-option-m span {
+  font-size: 35px;
+}
+
 .div-options-menu_pc {
   display: none;
   position: absolute;
@@ -290,7 +424,7 @@ header {
   right: 0.8px;
   width: 190px;
   border-radius: 3px;
-  background-color: #FFFFFF;
+  background-color: white;
   color: black;
   border: 1px solid #515151;
   font-size: 24px;
