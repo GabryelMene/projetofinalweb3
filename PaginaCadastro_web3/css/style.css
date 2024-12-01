@@ -22,8 +22,9 @@ body {
     background-color: white;
     justify-content: center;
     width: 800px;
-
-    @media (min-width: 240px) and (max-width: 800px) {
+}
+@media (min-width: 240px) and (max-width: 800px) {
+    .div-father{
         margin-top: 110px;
         width: auto;
         flex-direction: column;
@@ -32,8 +33,10 @@ body {
 
 .div-welcome {
     padding: 20px;
+}
 
-    @media (min-width: 240px) and (max-width: 800px) {
+@media (min-width: 240px) and (max-width: 800px) {
+    .div-welcome{
         border-bottom: 1px solid #009628;
         width: 100%;
     }
@@ -69,7 +72,7 @@ body {
     flex-direction: column;
 }
 
-.div-form .div-email-input { 
+.div-form .div-email-input {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -109,4 +112,8 @@ body {
     padding: 14px;
     color: white;
     font-weight: bolder;
+}
+
+a:hover{
+    cursor: pointer;
 }
