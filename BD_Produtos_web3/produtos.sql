@@ -6,7 +6,7 @@ CREATE TABLE IF NOT EXISTS `tb_produtos` (
     `imagem` VARCHAR(255) NOT NULL,
     `marca` VARCHAR(50) NOT NULL,
     `modelo` VARCHAR(50) NOT NULL,
-    `descricao` VARCHAR(300) NOT NULL, 
+    `descricao` TEXT NOT NULL, 
     `enderecoProduto` VARCHAR(30), 
     `preco` DOUBLE NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4; 
