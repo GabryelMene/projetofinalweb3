@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>WEB III</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/style.css"/>
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    </head>
+    <body>
+        <main>
+            <div class="div-father2" style="display: flex; border: 1px solid #009628; border-radius: 7px; margin: auto; margin-top: 220px; gap: 50px; background-color: white; justify-content: center; width: 800px;">
+                <div class="div-register" style=" padding: 20px; ">
+
+                    <h1> Vincular Produto </h1>
+
+                    <div class="div-register-warning" style="margin-top: 20px; margin-bottom: 20px;">
+                        <p style="margin-bottom: 5px;">   O registro de produto serve para </p>
+                        <p style="margin-bottom: 5px;"> vincular seu dispositivo de alguma </p>
+                        <p style="margin-bottom: 5px;"> marca parceira da <span style="color: #009628;">Leaf Company</span>. </p>
+                    </div>
+
+                    <div class="div-register-message" style="margin-bottom: 20px; font-style: italic; color: #515151;">
+                        <p style="margin-bottom: 5px;"> Vinculando o seu dispositivo, você </p>
+                        <p style="margin-bottom: 5px;"> terá acesso a pontos que você pode </p>
+                        <p style="margin-bottom: 5px;"> utilizar para obter desconto em </p>
+                        <p style="margin-bottom: 5px;"> produtos ou resgatar produtos digitais! </p>
+                    </div>
+                </div>
+                <div class="div-form-register" style=" border-left: 1px solid #009628; padding: 20px;">
+                    <form class="form-register validar" method="post" action="registrar-controller">
+
+                        <input type="hidden" name="pagina" value="registro">
+
+                        <div class="div-code-input" style=" gap: 10px;">
+                            <h3 style="margin-left: 30px;"> <span class="material-symbols-outlined">computer</span> Código do Produto </h3>
+                            <input class="endereco" name="endereco" id="endereco" style="margin-left: 30px; width: 300px;  padding: 14px; border: 2px solid #009628; border-radius: 7px;" type="text" placeholder="XX-XX-XX-XX-XX-AB" required>
+                            <p style="margin-left: 30px; margin-top: 20px; margin-bottom: 5px;">   O código do produto pode ser encontrado </p>
+                            <p style="margin-left: 30px; margin-bottom: 5px;"> atrás ou embaixo, ele é um código estilo </p>
+                            <p style="margin-left: 30px; margin-bottom: 25px;"> endereço MAC. </p>
+                        </div>
+
+                        <div class="div-input-register">
+                            <input id="proceed" class="register-input" style="width: 280px; margin-left: 40px; background-color: #009628; border: none; border-radius: 7px; padding: 14px; color: white; font-weight: bolder;" type="submit" value="REGISTRAR"> 
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </main>
+
+        <script src="./js/bootstrap.min.js"></script>
+        <script src="./js/init-validation.js"></script>
+    </body>
+</html>
