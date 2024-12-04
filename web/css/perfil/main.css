@@ -1,0 +1,179 @@
+@charset "UTF-8";
+.div-profile {
+  background-color: white;
+  border: 1px solid #515151;
+  padding: 15px;
+  border-radius: 3px;
+  margin: auto;
+  box-shadow: none;
+  border-top: none;
+  border-bottom: none;
+  border-radius: 0;
+}
+@media (min-width: 1370px) {
+  .div-profile {
+    width: 50%;
+  }
+}
+.div-profile .div-profile-pfp {
+  text-align: center;
+}
+.div-profile .div-profile-pfp .user-profile-pfp {
+  height: 150px;
+}
+.div-profile .div-form-profile {
+  margin-top: 10px;
+  justify-content: center;
+}
+.div-profile .div-form-profile form {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.div-profile .div-form-profile form .div-password-list-necessary {
+  display: none;
+  transition: display 1000ms linear;
+  padding-top: 10px;
+  padding-left: 0px;
+}
+.div-profile .div-form-profile form .div-password-list-necessary .list-password-necessary .item {
+  text-align: left;
+  background-color: rgba(0, 0, 0, 0.445);
+  color: white;
+  font-weight: bolder;
+  border-radius: 5px;
+  padding: 5px;
+  margin-bottom: 5px;
+  transition: background-color 600ms linear;
+}
+.div-profile .div-form-profile form input[type=file] {
+  display: none;
+}
+.div-profile .div-form-profile form input[type=text],
+.div-profile .div-form-profile form input[type=password],
+.div-profile .div-form-profile form input[type=email] {
+  padding: 5px;
+}
+.div-profile .div-form-profile form textarea {
+  resize: none;
+  padding: 5px;
+  height: 70px;
+}
+.div-profile .div-form-profile form .style-profile-pfp {
+  color: white;
+  height: 45px;
+  text-align: center;
+  width: 120px;
+  font-size: 20px;
+  font-weight: bolder;
+  background-color: #009628;
+  display: inline-block;
+  padding: 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.div-profile .div-form-profile form .label-input {
+  text-align: left;
+  color: #515151;
+  font-size: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 0px;
+}
+.div-profile .div-form-profile form .input-profile {
+  padding: 5px;
+  height: 35px;
+  border-radius: 5px;
+  border: 1px solid #515151;
+}
+.div-profile .div-form-profile form .input-profile:focus {
+  border: none;
+  border-style: none;
+}
+.div-profile .div-form-profile form .input-description {
+  padding: 0px;
+  height: 100px;
+}
+.div-profile .div-form-profile form .div-private-profile {
+  margin-top: 10px;
+  font-size: 15pt;
+  display: flex;
+  justify-content: left;
+  gap: 5px;
+  padding: 5px;
+  height: 35px;
+  color: white;
+  border-radius: 5px;
+  background-color: black;
+  transition: background-color 600ms linear;
+}
+.div-profile .div-form-profile form .div-private-profile label, .div-profile .div-form-profile form #div-private-profile input[type=checkbox] {
+  cursor: pointer;
+}
+
+.div-profile .div-form-profile form #div-news-profile {
+  margin-top: 10px;
+  font-size: 15pt;
+  display: flex;
+  justify-content: left;
+  gap: 5px;
+  padding: 5px;
+  height: 35px;
+  color: white;
+  border-radius: 5px;
+  background-color: black;
+  transition: background-color 600ms linear;
+}
+.div-profile .div-form-profile form #div-news-profile label, .div-profile .div-form-profile form #div-news-profile input[type=checkbox] {
+  cursor: pointer;
+}
+
+.div-profile .div-form-profile form .div-submit-buttons {
+  margin: 10px;
+}
+.div-profile .div-form-profile form .input-reset {
+  border: 2px solid rgba(0, 0, 0, 0.445);
+  border-radius: 5px;
+  background-color: white;
+  color: rgba(0, 0, 0, 0.445);
+  padding: 10px;
+  width: 100px;
+  font-size: 20px;
+  font-weight: bolder;
+  margin-right: 30px;
+  cursor: pointer;
+}
+.div-profile .div-form-profile form .input-submit {
+  color: white;
+  border: none;
+  padding: 10px;
+  width: 100px;
+  font-size: 20px;
+  border-radius: 5px;
+  background-color: #4F72FF;
+  cursor: pointer;
+}
+.div-profile .div-alert {
+  background-color: yellow;
+  padding: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.445);
+  margin-top: 30px;
+  text-align: center;
+}
+.div-profile .div-alert .h2-alert {
+  margin-bottom: 10px;
+}
+.div-profile .div-delete-account {
+  margin-top: 50px;
+  background-color: tomato;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.div-profile .div-delete-account a {
+  color: white;
+}
+
+main {
+  margin-top: 70px;
+}/*# sourceMappingURL=main.css.map */
