@@ -1,13 +1,13 @@
 USE leafdb; 
 
-CREATE TABLE IF NOT EXISTS `tb_produtosRegistrados` (
+CREATE TABLE IF NOT EXISTS `tb_produtosVinculados` (
     `id` INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
-    `idUsuario_registrados` INT NOT NULL, 
-    `idProduto_registrados` INT NOT NULL,
+    `idUsuario` INT NOT NULL, 
+    `idProduto` INT NOT NULL,
+    `enderecoProduto` VARCHAR(30) NOT NULL,
+    `nomeUsuario` VARCHAR(255) NOT NULL,
+    `nomeProduto` VARCHAR(255) NOT NULL,
     `data` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP(),
-
-    CONSTRAINT `idUsuario_registrados` FOREIGN KEY (`idUsuario_registrados`) REFERENCES `tb_usuarios` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
-    CONSTRAINT `idProduto_registrados` FOREIGN KEY (`idProduto_registrados`) REFERENCES `tb_produtos` (`id`) ON DELETE CASCADE ON UPDATE CASCADE 
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 SHOW TABLES; 
