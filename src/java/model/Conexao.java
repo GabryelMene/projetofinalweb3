@@ -14,7 +14,7 @@ public class Conexao {
         conn = DriverManager.getConnection(
                 "jdbc:mysql://localhost:3306/leafdb" ,
                 "root" ,
-                "Q_1#AsP4$"
+                ""
         );
         
         System.out.println("Conectado!");
