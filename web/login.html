@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>WEB III</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/login/style.css"/>
+        <link rel="shortcut icon" href="./images/user.png" type="image/x-icon">
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    </head>
+    <body>
+        <main>
+            <div class="div-father">
+                <div class="div-welcome">
+
+                    <h1> Seja bem vindo(a) de volta... </h1>
+
+                    <div class="div-welcome-security">
+                        <p> O <span>Leaf Company</span> guarda seus dados com segurança. </p>
+                        <p> Nem o <span>Leaf Company</span> tem acesso aos seus dados. </p>
+                    </div>
+
+                    <div class="div-welcome-message">
+                        <p> Estamos felizes por você estar de </p>
+                        <p> volta, com você, nós conseguimos </p>
+                        <p> salvar o meio ambiente. </p>
+                    </div>
+
+                    <a class="save-nature" target="_blank" href="https://www.bbc.com/portuguese/geral-59262486"> Como eu ajudo o meio ambiente? </a>
+                </div>
+
+                <div class="div-form">
+                    <form class="form" method="post" action="usuario-controller" novalidate>
+                        <input type="hidden" name="pagina" value="login">
+                        <div class="div-email-input">
+                            <h3> <span class="material-symbols-outlined">mail</span> E-mail </h3>
+                            <input class="email" type="email" name="email" placeholder="Digite seu email" required>
+                            <a class="link-forgot-email" href="index.html"> Esqueci meu E-mail. </a>
+                            <input class="password" type="password" name="password" placeholder="Digite sua senha" required style=" padding: 14px; border: 2px solid #009628; border-radius: 7px;">
+                            <a class="link-forgot-password" href="index.html"> Esqueci minha senha. </a>
+                        </div>
+
+                        <div class="div-inputs-options">
+                             <button class="create-account-input">
+                                 <a href="./cadastro.html" style="color: black">Criar conta</a>
+                             </button> 
+                            <input class="proceed-input" type="submit" value="Próxima">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
