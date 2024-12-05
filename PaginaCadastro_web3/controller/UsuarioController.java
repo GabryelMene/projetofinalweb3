@@ -38,7 +38,11 @@ public class UsuarioController extends HttpServlet {
                    session.setAttribute("autenticado", true);
                    session.setAttribute("userLogged", userLogged);
                    
-                   response.sendRedirect("inicio.jsp");
+                   if(email.equals("admin@admin")) {
+                       response.sendRedirect("admin.jsp");
+                   } else {
+                       response.sendRedirect("registrar_produtos.html");
+                   }
                    
                } else {
                    response.sendRedirect("index.html");
@@ -76,7 +80,7 @@ public class UsuarioController extends HttpServlet {
                 UsuarioDAO dao = new UsuarioDAO();
                 dao.deleteUser(id);
                 
-                response.sendRedirect("inicio.jsp");
+                response.sendRedirect("admin.jsp");
             } catch(ClassNotFoundException | SQLException erro) {
                 System.err.println( erro );
             }
@@ -110,7 +114,7 @@ public class UsuarioController extends HttpServlet {
                 UsuarioDAO uDao = new UsuarioDAO();
                 uDao.updateUser(u);
 
-                response.sendRedirect("inicio.jsp");
+                response.sendRedirect("admin.jsp");
 
             } catch (SQLException | ClassNotFoundException erro) {
                 System.err.println(erro);
