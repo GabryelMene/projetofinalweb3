@@ -12,6 +12,20 @@ body {
     background-color: #F0FFED;
 }
 
+td {
+    align-content: center;
+}
+
+#btn-menu {
+    float: right;
+    transform: translateY(-50px);
+}
+
+th {
+    background-color: black !important;
+    color: white !important;
+}
+
 .div-father {
     border: 1px solid #009628;
     border-radius: 7px;
@@ -116,4 +130,8 @@ body {
 
 a:hover{
     cursor: pointer;
+}
+
+.div-father2{
+    display: flex
 }
