@@ -44,8 +44,8 @@ public class UsuarioDAO {
     }
 
     public void setNewUser(Usuario user) throws SQLException {
-        String query = "INSERT INTO tb_usuarios(nome, email, senha, novidades, pontos) "
-                + "VALUES(?, ?, sha1(?), ?, ?);";
+        String query = "INSERT INTO tb_usuarios(nome, email, senha, novidades) "
+                + "VALUES(?, ?, sha1(?), ?);";
 
         PreparedStatement prep = conn.prepareStatement(query);
 
@@ -53,7 +53,6 @@ public class UsuarioDAO {
         prep.setString(2, user.getEmail());
         prep.setString(3, user.getSenha());
         prep.setInt(4, user.isNovidades() ? 1 : 0);
-        prep.setInt(5, 0);
 
         prep.execute();
         prep.close();
